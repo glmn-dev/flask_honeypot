@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <link rel="stylesheet" href='/static/style.css' />
+        {% if title %}
+        <title>{{ title }} - Control Panel</title>
+        {% else %}
+        <title>Control Panel</title>
+        {% endif %}
+    </head>
+    <body>
+        <div class="main">
+            <img src="/static/bonfire.gif">
+            {% block content %}{% endblock %}
+        </div>
+    </body>
+</html>
