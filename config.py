@@ -13,5 +13,5 @@ class Config(object):
     PORT: int = os.environ.get('HP_PORT') or 5000
     TG_API_KEY: str = os.environ.get('TG_API_KEY')
     TG_ADMIN: int = os.environ.get('TG_ADMIN')
-    TG_REPORTS: bool = cast_bool(os.environ.get('TG_REPORTS'))
-    DEBUG: bool = cast_bool(os.environ.get('DEBUG'))
+    TG_REPORTS: bool = cast_bool(os.environ.get('TG_REPORTS')) or True
+    DEBUG: bool = cast_bool(os.environ.get('DEBUG')) or True
